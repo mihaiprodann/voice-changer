@@ -8,8 +8,16 @@ fi
 
 echo "[1/4] Installing system dependencies (Ubuntu)..."
 sudo apt-get update -y
-sudo apt-get install -y pipx libportaudio2 python3-tk
-
+sudo apt-get install -y \
+    pipx \
+    libportaudio2 \
+    python3-tk \
+    pulseaudio-utils \
+    libxcb-cursor0 \
+    libxcb-xinerama0 \
+    libxkbcommon-x11-0 \
+    libxcb-keysyms1
+    
 echo "[2/4] Configuring pipx PATH..."
 pipx ensurepath >/dev/null 2>&1 || true
 

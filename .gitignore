@@ -1,3 +1,5 @@
 .venv/
 build/
 src/voicechanger.egg-info/
+src/voicechanger/__pycache__/
+src/voicechanger/*/__pycache__/
